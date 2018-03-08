@@ -2,8 +2,6 @@
 
 const array = [2,7,1,15,30,32,72,70,51,42,25,24,53,55,78,50,13,40,48,];
 
-
-
 function bucketSort(arr){
     const bucket = [];
     for(let i=0; i<arr.length; i++){

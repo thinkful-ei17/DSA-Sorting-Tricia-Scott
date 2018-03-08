@@ -78,8 +78,8 @@ function randomSort(array) {
 	//take first and swap with middle
   
 	for (let i = 0; i < array.length; i++) {
-		const mid = Math.floor((Math.random() * array.length));
-		swap(array, mid, i);
+		const random = Math.floor((Math.random() * array.length));
+		swap(array, random, i);
 	}
   
 	return array;
