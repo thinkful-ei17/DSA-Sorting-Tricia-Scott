@@ -71,6 +71,22 @@ function swap(array, i, j){
 	array[i] = array[j];
 	array[j] = temp;
 }
+const makeRandomArr = [3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23];
 
-console.log('QuickSort = ', qSort(array));
-console.log('MergeSort = ', mSort(array));
+function randomSort(array) {
+	//loop through array and
+	//take first and swap with middle
+  
+	for (let i = 0; i < array.length; i++) {
+		const mid = Math.floor((Math.random() * array.length));
+		swap(array, mid, i);
+	}
+  
+	return array;
+  
+}
+
+// console.log('QuickSort = ', qSort(array));
+// console.log('MergeSort = ', mSort(array));
+console.log(makeRandomArr);
+console.log('This is random sort ', randomSort(makeRandomArr));
